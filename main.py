@@ -12,10 +12,10 @@ log_filename = f'Logs\\{datetime.datetime.now().strftime("%a %b %d %I-%M-%S %p")
 logging.basicConfig(filename=log_filename, level=logging.INFO)
 
 # SharePoint credentials
-username = "your_username"
-password = "your_password"
-site_url = "https://your_sharepoint_site_url/"
-site_name = "your_sharepoint_site_name"
+username = "flowbot@choicehumanitarian.org"
+password = "IShouldBeHashed19!"
+site_url = "https://choicems.sharepoint.com"
+site_name = "chprojects"
 
 # set up SharePoint connection
 authcookie = Office365(site_url, username=username, password=password).GetCookies()
